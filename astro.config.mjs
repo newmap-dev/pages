@@ -7,7 +7,6 @@ import site from './src/content/site.json';
 export default defineConfig({
   output: 'static',
   site: site.url,
-  base: '/pages',
   vite: {
     plugins: [tailwindcss()],
   },
