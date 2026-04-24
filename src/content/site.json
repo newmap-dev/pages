@@ -1,8 +1,9 @@
 {
+  "_note": "To change domain: edit 'url' + 'email' here, AND edit public/CNAME",
   "title": "newmap",
   "description": "Indoor navigation for complex spaces.",
   "url": "https://newmap.site",
-  "email": "hello@newmap.site",
+  "email": "hello@newmap.tech",
   "nav": [
     { "label": "About", "href": "/about" },
     { "label": "Work", "href": "/work" },
