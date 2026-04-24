@@ -33,9 +33,9 @@ const { frontmatter, Content } = Astro.props;
     <h1 class="text-4xl md:text-5xl font-bold tracking-tighter text-text-primary leading-[0.95] mb-4">
       {frontmatter.title}
     </h1>
-    <p class="text-lg text-text-secondary mb-16">{frontmatter.subtitle}</p>
+    <p class="text-lg text-text-secondary mb-12">{frontmatter.subtitle}</p>
 
-    <article class="prose-custom">
+    <article class="prose-custom border-t border-border pt-12">
       <Content />
     </article>
   </div>

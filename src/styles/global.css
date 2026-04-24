@@ -99,20 +99,21 @@ a:hover {
 }
 
 .prose-custom h2 {
-  font-size: 1.125rem;
-  font-weight: 600;
-  line-height: 1.4;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
   margin-top: 3rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   color: var(--color-text-primary);
 }
 
 .prose-custom h3 {
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.4;
   margin-top: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   color: var(--color-text-primary);
 }
 
@@ -125,7 +126,7 @@ a:hover {
 
 .prose-custom ul,
 .prose-custom ol {
-  padding-left: 1.25rem;
+  padding-left: 1.5rem;
   margin-bottom: 1.25rem;
 }
 
@@ -154,5 +155,5 @@ a:hover {
 .prose-custom hr {
   border: none;
   border-top: 1px solid var(--color-border);
-  margin: 3rem 0;
+  margin: 2.5rem 0;
 }
