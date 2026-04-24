@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>newmap — Color Scheme Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-sans); transition: background-color 0.2s, color 0.2s; }
+
+    /* ================================================================
+       SCHEME 1: Stone Blue (Current default)
+       Warm stone + electric blue. Professional, clean, modern.
+       ================================================================ */
+    [data-scheme="stone-blue"] {
+      --bg: #fafaf9;
+      --surface: #ffffff;
+      --text: #0c0a09;
+      --text-secondary: #44403c;
+      --text-muted: #a8a29e;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --border: #e7e5e4;
+    }
+
+    /* ================================================================
+       SCHEME 2: Dark Navy
+       Deep navy + soft gold. Premium, editorial, night-mode feel.
+       ================================================================ */
+    [data-scheme="dark-navy"] {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --text: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #64748b;
+      --accent: #fbbf24;
+      --accent-hover: #f59e0b;
+      --border: #334155;
+    }
+
+    /* ================================================================
+       SCHEME 3: Forest Cream
+       Cream + deep forest green. Natural, calm, trustworthy.
+       ================================================================ */
+    [data-scheme="forest-cream"] {
+      --bg: #fefce8;
+      --surface: #ffffff;
+      --text: #1a2e05;
+      --text-secondary: #3f6212;
+      --text-muted: #a3a3a3;
+      --accent: #15803d;
+      --accent-hover: #166534;
+      --border: #e7e5e4;
+    }
+
+    /* ================================================================
+       SCHEME 4: Warm Terracotta
+       Warm cream + terracotta. Earthy, bold, architectural.
+       ================================================================ */
+    [data-scheme="terracotta"] {
+      --bg: #faf7f2;
+      --surface: #ffffff;
+      --text: #292524;
+      --text-secondary: #57534e;
+      --text-muted: #a8a29e;
+      --accent: #c25e00;
+      --accent-hover: #9a4a00;
+      --border: #e7e5e4;
+    }
+
+    /* ================================================================
+       SCHEME 5: Cool Slate
+       Light slate + indigo. Sharp, tech-forward, minimal.
+       ================================================================ */
+    [data-scheme="cool-slate"] {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text: #020617;
+      --text-secondary: #334155;
+      --text-muted: #94a3b8;
+      --accent: #4f46e5;
+      --accent-hover: #4338ca;
+      --border: #e2e8f0;
+    }
+
+    /* ================================================================
+       SCHEME 6: Ink + Coral
+       Near-black + coral red. Bold, confident, standout.
+       ================================================================ */
+    [data-scheme="ink-coral"] {
+      --bg: #09090b;
+      --surface: #18181b;
+      --text: #fafafa;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent: #f43f5e;
+      --accent-hover: #e11d48;
+      --border: #27272a;
+    }
+
+    /* ================================================================
+       SCHEME 7: Sage + Charcoal
+       Sage green background + charcoal. Organic, sophisticated.
+       ================================================================ */
+    [data-scheme="sage-charcoal"] {
+      --bg: #f0fdf4;
+      --surface: #ffffff;
+      --text: #171717;
+      --text-secondary: #525252;
+      --text-muted: #a3a3a3;
+      --accent: #0f766e;
+      --accent-hover: #115e59;
+      --border: #e5e5e5;
+    }
+
+    /* ================================================================
+       SCHEME 8: Pure Brutalist
+       White + pure black. Maximum contrast, raw, honest.
+       ================================================================ */
+    [data-scheme="brutalist"] {
+      --bg: #ffffff;
+      --surface: #fafafa;
+      --text: #000000;
+      --text-secondary: #404040;
+      --text-muted: #a3a3a3;
+      --accent: #000000;
+      --accent-hover: #404040;
+      --border: #e5e5e5;
+    }
+
+    /* Apply */
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    /* Controls */
+    .controls {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow-x: auto;
+      z-index: 100;
+    }
+    .controls-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-right: 8px;
+      white-space: nowrap;
+    }
+    .scheme-btn {
+      padding: 6px 14px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text-secondary);
+      font-size: 0.8125rem;
+      font-weight: 500;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.15s;
+    }
+    .scheme-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .scheme-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    /* Preview layout */
+    .preview {
+      padding-top: 64px;
+    }
+
+    /* Header */
+    .header {
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .nav { display: flex; gap: 24px; }
+    .nav a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      text-decoration: none;
+    }
+    .nav a:hover { color: var(--text); }
+
+    /* Hero */
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 24px;
+    }
+    .hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .hero-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      margin-bottom: 24px;
+    }
+    .hero-title {
+      font-size: clamp(4rem, 10vw, 8rem);
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      line-height: 0.9;
+      color: var(--text);
+      margin-bottom: 32px;
+    }
+    .hero-desc {
+      font-size: 1.25rem;
+      line-height: 1.6;
+      color: var(--text-secondary);
+      max-width: 560px;
+      margin-bottom: 32px;
+    }
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.9375rem;
+      text-decoration: none;
+    }
+    .hero-cta:hover {
+      background: var(--accent-hover);
+      color: #fff;
+    }
+
+    /* Info section */
+    .info {
+      border-top: 1px solid var(--border);
+      padding: 96px 24px;
+    }
+    .info-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+    }
+    @media (max-width: 768px) {
+      .info-inner { grid-template-columns: 1fr; }
+    }
+    .info-block h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+    .info-block p {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--text-secondary);
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid var(--border);
+      background: var(--bg);
+      padding: 32px 24px;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-name {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .footer-desc {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body data-scheme="stone-blue">
+
+  <div class="controls">
+    <span class="controls-label">Scheme</span>
+    <button class="scheme-btn active" onclick="setScheme('stone-blue')">Stone Blue</button>
+    <button class="scheme-btn" onclick="setScheme('dark-navy')">Dark Navy</button>
+    <button class="scheme-btn" onclick="setScheme('forest-cream')">Forest Cream</button>
+    <button class="scheme-btn" onclick="setScheme('terracotta')">Terracotta</button>
+    <button class="scheme-btn" onclick="setScheme('cool-slate')">Cool Slate</button>
+    <button class="scheme-btn" onclick="setScheme('ink-coral')">Ink + Coral</button>
+    <button class="scheme-btn" onclick="setScheme('sage-charcoal')">Sage</button>
+    <button class="scheme-btn" onclick="setScheme('brutalist')">Brutalist</button>
+  </div>
+
+  <div class="preview">
+    <header class="header">
+      <div class="header-inner">
+        <a href="#" class="logo">newmap</a>
+        <nav class="nav">
+          <a href="#">About</a>
+          <a href="#">Work</a>
+          <a href="#">Offerings</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="hero-label">Now accepting pilot partners</p>
+        <h1 class="hero-title">newmap</h1>
+        <p class="hero-desc">Indoor navigation for complex spaces. We help people find their way inside hospitals, campuses, airports, and anywhere else they get lost.</p>
+        <a href="#" class="hero-cta">View offerings →</a>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="info-inner">
+        <div class="info-block">
+          <h2>What we do</h2>
+          <p>We build digital maps and turn-by-turn directions that work inside buildings. No app downloads. No proprietary hardware. Just a web link that works on any device.</p>
+        </div>
+        <div class="info-block">
+          <h2>Current focus</h2>
+          <p>We are running no-cost pilot partnerships with organizations that manage complex indoor environments. In exchange for feedback and a case study, we deploy a working navigation system inside your building.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-name">newmap</div>
+          <div class="footer-desc">Indoor navigation for complex spaces.</div>
+        </div>
+        <div class="footer-desc">hello@newmap.site</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function setScheme(name) {
+      document.body.setAttribute('data-scheme', name);
+      document.querySelectorAll('.scheme-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.textContent.toLowerCase().includes(name.replace(/-/g, ' ')));
+      });
+    }
+  </script>
+
+</body>
+</html>

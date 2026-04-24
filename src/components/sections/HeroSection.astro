@@ -1,0 +1,23 @@
+---
+const { headline, subheadline } = Astro.props;
+---
+
+<section class="py-20 md:py-28 lg:py-36 border-b border-border relative overflow-hidden">
+  <div class="absolute right-0 top-0 bottom-0 w-1/3 opacity-[0.03] pointer-events-none select-none">
+    <div class="text-[20rem] font-serif font-bold text-text-primary leading-none -mr-20 mt-10">
+      ◌
+    </div>
+  </div>
+  <div class="mx-auto max-w-5xl px-6 relative">
+    <div class="max-w-3xl">
+      <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif font-semibold tracking-tight text-text-primary leading-[0.95] mb-6">
+        {headline}
+      </h1>
+      {subheadline && (
+        <p class="text-xl md:text-2xl text-text-secondary max-w-xl leading-relaxed">
+          {subheadline}
+        </p>
+      )}
+    </div>
+  </div>
+</section>

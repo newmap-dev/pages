@@ -1,0 +1,23 @@
+---
+import HeroSection from './HeroSection.astro';
+import HeaderSection from './HeaderSection.astro';
+import GridSection from './GridSection.astro';
+import TextSection from './TextSection.astro';
+import StepsSection from './StepsSection.astro';
+import CTASection from './CTASection.astro';
+
+const { section } = Astro.props;
+
+const components: Record<string, any> = {
+  hero: HeroSection,
+  header: HeaderSection,
+  grid: GridSection,
+  text: TextSection,
+  steps: StepsSection,
+  cta: CTASection,
+};
+
+const Component = components[section.type];
+---
+
+{Component ? <Component {...section} /> : <p class="text-text-muted text-sm">Unknown section type: {section.type}</p>}

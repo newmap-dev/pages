@@ -1,0 +1,20 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { Content } from '../content/pages/contact.md';
+---
+
+<PageLayout title="Contact">
+  <div class="mx-auto max-w-3xl px-6 pt-24 md:pt-32 pb-24 md:pb-32">
+    <p class="text-sm font-medium text-accent uppercase tracking-widest mb-4">Contact</p>
+    <h1 class="text-5xl md:text-6xl font-bold tracking-tighter text-text-primary leading-[0.95] mb-6">
+      Get in touch
+    </h1>
+    <p class="text-xl text-text-secondary max-w-lg leading-relaxed mb-20">
+      We typically respond within 24–48 hours.
+    </p>
+
+    <article class="prose-custom">
+      <Content />
+    </article>
+  </div>
+</PageLayout>

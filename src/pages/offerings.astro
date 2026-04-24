@@ -1,0 +1,53 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+
+const offeringFiles = import.meta.glob('../content/offerings/*.md', { eager: true });
+
+const offerings = Object.entries(offeringFiles).map(([path, mod]: [string, any]) => {
+  const slug = path.replace(/.*\/offerings\//, '').replace('.md', '');
+  return {
+    slug,
+    ...mod.frontmatter,
+  };
+});
+---
+
+<PageLayout title="Offerings">
+  <div class="mx-auto max-w-3xl px-6 pt-24 md:pt-32 pb-24 md:pb-32">
+    <p class="text-sm font-medium text-accent uppercase tracking-widest mb-4">Offerings</p>
+    <h1 class="text-5xl md:text-6xl font-bold tracking-tighter text-text-primary leading-[0.95] mb-6">
+      How we work with partners
+    </h1>
+    <p class="text-xl text-text-secondary max-w-lg leading-relaxed mb-20">
+      No-cost pilot programs for organizations that manage complex indoor environments.
+    </p>
+
+    <div class="flex flex-col gap-0">
+      {offerings.map((offering) => (
+        <a
+          href={`/offerings/${offering.slug}`}
+          class="group flex items-start justify-between py-8 border-t border-border no-underline"
+        >
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2">
+              <h2 class="text-xl md:text-2xl font-semibold text-text-primary group-hover:text-accent transition-colors">
+                {offering.title}
+              </h2>
+              {offering.status && (
+                <span class="inline-flex items-center px-2 py-0.5 text-xs font-medium bg-surface text-text-secondary border border-border">
+                  {offering.status}
+                </span>
+              )}
+            </div>
+            <p class="text-base text-text-secondary">
+              {offering.subtitle}
+            </p>
+          </div>
+          <span class="text-text-muted group-hover:text-accent transition-colors text-lg ml-6 hidden md:block">
+            →
+          </span>
+        </a>
+      ))}
+    </div>
+  </div>
+</PageLayout>

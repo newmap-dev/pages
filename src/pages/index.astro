@@ -1,0 +1,54 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+---
+
+<PageLayout>
+  <!-- Hero -->
+  <section class="min-h-[90vh] flex flex-col justify-center">
+    <div class="mx-auto max-w-3xl w-full px-6">
+      <div class="flex items-center gap-3 mb-8">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+        </span>
+        <p class="text-sm font-medium text-accent uppercase tracking-widest">
+          Now accepting pilot partners
+        </p>
+      </div>
+
+      <h1 class="text-7xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-text-primary leading-[0.85] mb-8">
+        newmap
+      </h1>
+      <p class="text-xl md:text-2xl text-text-secondary max-w-xl leading-relaxed mb-10">
+        Indoor navigation for complex spaces. We help people find their way inside hospitals, campuses, airports, and anywhere else they get lost.
+      </p>
+      <a 
+        href="/offerings" 
+        class="inline-flex items-center gap-2 text-base font-medium text-accent no-underline hover:text-accent-hover transition-colors"
+      >
+        View offerings
+        <span>→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Info -->
+  <section class="py-24 md:py-32 border-t border-border">
+    <div class="mx-auto max-w-3xl px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div>
+          <h2 class="text-2xl font-bold text-text-primary mb-4">What we do</h2>
+          <p class="text-text-secondary leading-relaxed">
+            We build digital maps and turn-by-turn directions that work inside buildings. No app downloads. No proprietary hardware. Just a web link that works on any device.
+          </p>
+        </div>
+        <div>
+          <h2 class="text-2xl font-bold text-text-primary mb-4">Current focus</h2>
+          <p class="text-text-secondary leading-relaxed">
+            We are running no-cost pilot partnerships with organizations that manage complex indoor environments. In exchange for feedback and a case study, we deploy a working navigation system inside your building.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</PageLayout>

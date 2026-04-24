@@ -1,0 +1,64 @@
+---
+import site from '../../content/site.json';
+---
+
+<header class="border-b border-border bg-bg">
+  <div class="mx-auto max-w-3xl px-6 py-5 flex items-center justify-between">
+    <a href="/" class="text-base font-semibold text-text-primary no-underline hover:text-accent transition-colors tracking-tight">
+      newmap
+    </a>
+    <nav class="flex items-center gap-6">
+      {site.nav.map((item) => (
+        <a
+          href={item.href}
+          class="text-sm font-medium no-underline transition-colors text-text-secondary hover:text-text-primary"
+        >
+          {item.label}
+        </a>
+      ))}
+      <theme-toggle>
+        <button
+          id="theme-toggle"
+          class="p-1.5 text-text-muted hover:text-text-primary transition-colors"
+          aria-label="Toggle dark mode"
+        >
+          <span id="theme-icon-sun" class="hidden">☀</span>
+          <span id="theme-icon-moon">☾</span>
+        </button>
+      </theme-toggle>
+    </nav>
+  </div>
+</header>
+
+<script>
+  class ThemeToggle extends HTMLElement {
+    connectedCallback() {
+      const btn = this.querySelector('#theme-toggle');
+      const sun = this.querySelector('#theme-icon-sun');
+      const moon = this.querySelector('#theme-icon-moon');
+
+      function updateIcon() {
+        const theme = document.documentElement.getAttribute('data-theme');
+        if (theme === 'dark') {
+          sun?.classList.remove('hidden');
+          moon?.classList.add('hidden');
+        } else {
+          sun?.classList.add('hidden');
+          moon?.classList.remove('hidden');
+        }
+      }
+
+      updateIcon();
+
+      btn?.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        updateIcon();
+      });
+    }
+  }
+
+  customElements.define('theme-toggle', ThemeToggle);
+</script>

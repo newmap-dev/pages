@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  --color-bg: var(--color-bg);
+  --color-surface: var(--color-surface);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-muted: var(--color-text-muted);
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-border: var(--color-border);
+}
+
+/* ================================================================
+   INK + CORAL — Light Mode
+   Warm white with coral red accent. Bold, confident.
+   ================================================================ */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --color-bg: #fafaf9;
+  --color-surface: #ffffff;
+  --color-text-primary: #18181b;
+  --color-text-secondary: #52525b;
+  --color-text-muted: #a1a1aa;
+  --color-accent: #e11d48;
+  --color-accent-hover: #be123c;
+  --color-border: #e4e4e7;
+}
+
+/* ================================================================
+   INK + CORAL — Dark Mode
+   Near-black with coral red. High contrast, bold.
+   ================================================================ */
+[data-theme="dark"] {
+  --color-bg: #09090b;
+  --color-surface: #18181b;
+  --color-text-primary: #fafafa;
+  --color-text-secondary: #a1a1aa;
+  --color-text-muted: #71717a;
+  --color-accent: #f43f5e;
+  --color-accent-hover: #e11d48;
+  --color-border: #27272a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #09090b;
+    --color-surface: #18181b;
+    --color-text-primary: #fafafa;
+    --color-text-secondary: #a1a1aa;
+    --color-text-muted: #71717a;
+    --color-accent: #f43f5e;
+    --color-accent-hover: #e11d48;
+    --color-border: #27272a;
+  }
+}
+
+html {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  transition: background-color 150ms ease-out, color 150ms ease-out;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 150ms ease-out;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+
+.prose-custom {
+  max-width: 65ch;
+}
+
+.prose-custom h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-primary);
+}
+
+.prose-custom h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-top: 3rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-text-primary);
+}
+
+.prose-custom h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-primary);
+}
+
+.prose-custom p {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+  color: var(--color-text-secondary);
+}
+
+.prose-custom ul,
+.prose-custom ol {
+  padding-left: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.prose-custom li {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-secondary);
+}
+
+.prose-custom a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.prose-custom a:hover {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
+.prose-custom strong {
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.prose-custom hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 3rem 0;
+}

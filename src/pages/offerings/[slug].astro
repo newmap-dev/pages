@@ -1,0 +1,42 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+
+export async function getStaticPaths() {
+  const offeringFiles = import.meta.glob('../../content/offerings/*.md', { eager: true });
+  
+  return Object.entries(offeringFiles).map(([path, mod]: [string, any]) => {
+    const slug = path.replace(/.*\/offerings\//, '').replace('.md', '');
+    return {
+      params: { slug },
+      props: { 
+        frontmatter: mod.frontmatter,
+        Content: mod.Content,
+      },
+    };
+  });
+}
+
+const { frontmatter, Content } = Astro.props;
+---
+
+<PageLayout title={frontmatter.title}>
+  <div class="mx-auto max-w-3xl px-6 pt-24 md:pt-32 pb-24 md:pb-32">
+    <a href="/offerings" class="text-sm text-text-muted hover:text-accent transition-colors mb-12 block no-underline">
+      ← Offerings
+    </a>
+
+    {frontmatter.status && (
+      <span class="inline-flex items-center px-2 py-0.5 text-xs font-medium bg-surface text-text-secondary border border-border mb-4">
+        {frontmatter.status}
+      </span>
+    )}
+    <h1 class="text-4xl md:text-5xl font-bold tracking-tighter text-text-primary leading-[0.95] mb-4">
+      {frontmatter.title}
+    </h1>
+    <p class="text-lg text-text-secondary mb-16">{frontmatter.subtitle}</p>
+
+    <article class="prose-custom">
+      <Content />
+    </article>
+  </div>
+</PageLayout>

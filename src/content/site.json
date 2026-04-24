@@ -1,0 +1,20 @@
+{
+  "title": "newmap",
+  "description": "Indoor navigation for complex spaces.",
+  "url": "https://newmap.site",
+  "email": "hello@newmap.site",
+  "nav": [
+    { "label": "About", "href": "/about" },
+    { "label": "Work", "href": "/work" },
+    { "label": "Offerings", "href": "/offerings" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "footer": {
+    "links": [],
+    "external": []
+  },
+  "social": {
+    "github": "",
+    "linkedin": ""
+  }
+}

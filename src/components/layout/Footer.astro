@@ -1,0 +1,50 @@
+---
+import site from '../../content/site.json';
+
+// Static check — update these when adding new content types
+const hasWriting = false;
+const hasCases = false;
+---
+
+<footer class="border-t border-border bg-bg mt-auto">
+  <div class="mx-auto max-w-3xl px-6 py-10">
+    {/* Secondary nav — only shows what exists */}
+    {(hasWriting || hasCases || site.footer?.external) && (
+      <div class="flex flex-wrap items-center gap-x-6 gap-y-2 mb-8">
+        {hasWriting && (
+          <a href="/writing" class="text-sm text-text-secondary no-underline hover:text-accent transition-colors">
+            Writing
+          </a>
+        )}
+        {hasCases && (
+          <a href="/cases" class="text-sm text-text-secondary no-underline hover:text-accent transition-colors">
+            Cases
+          </a>
+        )}
+        {site.footer?.external?.map((item) => (
+          <a 
+            href={item.href} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="text-sm text-text-secondary no-underline hover:text-accent transition-colors inline-flex items-center gap-1"
+          >
+            {item.label}
+            <span class="text-xs">↗</span>
+          </a>
+        ))}
+      </div>
+    )}
+    
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pt-8 border-t border-border">
+      <p class="text-sm text-text-muted">
+        © {new Date().getFullYear()} {site.title}
+      </p>
+      <a
+        href={`mailto:${site.email}`}
+        class="text-sm text-text-secondary no-underline hover:text-accent transition-colors"
+      >
+        {site.email}
+      </a>
+    </div>
+  </div>
+</footer>
