@@ -14,7 +14,7 @@ We read everything and respond within 24–48 hours.
 
 The more you tell us about your building and the people navigating it, the faster we can figure out if we are a good fit.
 
-- What kind of building is it? (hospital, campus, airport, convention center, etc.)
+- What kind of building is it? (hospital, campus, airport, mall, convention center, etc.)
 - How many floors or square meters?
 - Do you have floor plans or CAD files?
 - What is the biggest wayfinding problem you see today?

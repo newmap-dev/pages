@@ -4,7 +4,7 @@ title: About
 
 ## Why we started this
 
-We kept watching people get lost inside buildings they had never visited before — hospitals with identical corridors, campuses spread across city blocks, airports where gates hide behind retail floors. The signs were never enough, and asking for directions is a last resort, not a solution.
+We kept watching people get lost inside buildings they had never visited before — hospitals with identical corridors, campuses spread across city blocks, airports where gates hide behind retail floors, malls where stores blur into an endless grid. The signs were never enough, and asking for directions is a last resort, not a solution.
 
 Outdoor navigation is solved. Indoor navigation is not. That gap is what we are closing.
 
