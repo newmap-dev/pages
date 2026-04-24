@@ -4,26 +4,20 @@ title: Work
 
 ## What we build
 
-newmap is an indoor navigation platform that turns complex buildings into spaces that are easy to understand and move through. We build the maps, the directions, and the interfaces that help people get where they need to go — without downloading an app or buying proprietary hardware.
+newmap turns complex buildings into spaces that are easy to understand and move through. We build the maps, the directions, and the interfaces that help people get where they need to go — on the devices they already carry.
 
 ### Platform
 
-- **Interactive indoor maps** that work in any web browser, on any device
-- **Turn-by-turn directions** inside buildings, with routes that account for stairs, elevators, and accessibility needs
-- **Real-time updates** when rooms change, routes close, or new areas open
-- **Usage insights** that help facilities teams understand how people move through their spaces
-
-### Demo
-
-We maintain a live demo of our platform on a sample indoor map. It shows the core wayfinding experience without requiring any real building data.
-
-<!-- Uncomment when demo is ready:
-[Try the demo →](https://demo.newmap.site)
--->
+- **Interactive indoor maps** that load in any web browser. No app store, no installation, no accounts.
+- **Turn-by-turn directions** that account for stairs, elevators, accessibility needs, and real-world obstacles.
+- **Live updates** when rooms change, routes close, or new areas open.
+- **Usage insights** that show facilities teams how people actually move through the space.
 
 ### How we work
 
-We do not ship generic software and walk away. Every building is different, so we work closely with the people who know the space best. We build the technology, you bring the domain knowledge, and together we make something that actually works for the people who use it.
+Every building is different. We do not ship generic software and walk away. We work with the people who know the space best — facilities teams, operations staff, front-desk workers — to build something that actually fits.
+
+You bring the floor plans and the domain knowledge. We bring the maps, routing, and interface. Together we make something that works for the people who use it.
 
 ### Current status
 

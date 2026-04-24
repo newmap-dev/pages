@@ -2,23 +2,21 @@
 title: Contact
 ---
 
-## Get in touch
+## Email us
 
-The fastest way to reach us is by email:
+The fastest way to reach us:
 
 [hello@newmap.tech](mailto:hello@newmap.tech)
 
-We typically respond within 24–48 hours.
+We read everything and respond within 24–48 hours.
 
-### Book a call
+### What to include
 
-If you prefer to talk in person, you can schedule a short introductory call.
+The more you tell us about your building and the people navigating it, the faster we can figure out if we are a good fit.
 
-[Schedule a call](https://calendly.com/YOUR_LINK) *(link coming soon)*
+- What kind of building is it? (hospital, campus, airport, convention center, etc.)
+- How many floors or square meters?
+- Do you have floor plans or CAD files?
+- What is the biggest wayfinding problem you see today?
 
-### Who we want to talk to
-
-- Facilities and operations teams at hospitals, campuses, airports, or convention centers
-- People who work in wayfinding, signage, or visitor experience
-- Engineers and designers interested in indoor mapping and navigation
-- Anyone who has ever gotten lost in a building and thought, "there has to be a better way"
+We will let you know honestly whether a pilot makes sense right now or if it is better to wait.

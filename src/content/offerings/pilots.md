@@ -1,29 +1,40 @@
 ---
 title: Pilot Partnerships
-subtitle: No-cost indoor navigation pilots for complex environments
+subtitle: Free indoor navigation pilots for early partners
 status: Active
 ---
 
 ## Overview
 
-Our primary offering is a no-cost pilot program for organizations that manage complex indoor environments. We deploy a working navigation system inside your building, you help us understand what works and what does not, and together we publish a case study.
+We deploy a working navigation system inside your building in about two weeks. No cost, no procurement cycle, no IT overhead. We build the map, launch the interface, gather feedback, and publish a case study — fast.
 
-## Why partner with us
+This is not a trial of generic software. We configure everything for your specific building and layout. Your visitors can start using it immediately.
 
-- **Zero cost.** We cover the development and deployment. You get a working navigation system at no charge.
-- **Real impact.** Your visitors and staff stop getting lost. Your operations team gets data on how people move through the space.
-- **Case study.** We publish what we learn together, raising the profile of your organization as an early innovator.
-- **Early access.** Pilot partners get first access to new features and ongoing support as we grow.
+## What you get
 
-## What the pilot looks like
+- **A working navigation system** inside your building, accessible via QR code or web link
+- **No cost to you** — we cover everything during the pilot
+- **Data on how people move** through your space — which routes are used, where people get stuck
+- **A published case study** that raises your profile as an early innovator
+- **First access** to new features and ongoing support if you continue past the pilot
 
-**Week 1–2: Map.** We build a digital map of your building from your floor plans or CAD files.
+## What we need from you
 
-**Week 3–4: Deploy.** We launch a web-based wayfinding interface your visitors and staff can use immediately.
+- Floor plans or CAD files for your building
+- One point of contact who knows the space
+- Permission to publish a case study
 
-**Week 5–6: Iterate.** We gather feedback, watch how people use it, and refine the experience.
+That is it. We handle the build, deployment, and iteration. You just point us at the right rooms and tell us what is working.
 
-**Week 7–8: Publish.** We write a case study together and discuss what comes next.
+## How it works
+
+**Week 1: Map.** We build a digital map from your floor plans and configure routing for your layout.
+
+**Week 2: Deploy.** We launch a web-based wayfinding interface your visitors can use immediately. We start gathering feedback right away.
+
+**Week 3: Iterate.** We refine based on what we learn — usually a few quick adjustments to routes, room labels, or the interface.
+
+**Week 4: Publish.** We write a case study together and discuss what comes next.
 
 ## Who we are looking for
 
@@ -31,8 +42,6 @@ We are currently focused on healthcare — hospitals, clinics, and medical campu
 
 If you work in education, transit, or events and want to be an early partner, [contact us](/contact). We designed our platform to be industry-agnostic from day one.
 
-## Get in touch
-
-If you manage a complex indoor space and care about the people navigating it, we want to talk to you. No technical expertise required.
+## Ready to talk?
 
 [hello@newmap.tech](mailto:hello@newmap.tech)

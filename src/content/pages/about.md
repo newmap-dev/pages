@@ -2,21 +2,22 @@
 title: About
 ---
 
-## About newmap
+## Why we started this
 
-newmap is an indoor navigation company. We build the maps, the routing algorithms, and the web interfaces that help people find their way inside complex buildings.
+We kept watching people get lost inside buildings they had never visited before — hospitals with identical corridors, campuses spread across city blocks, airports where gates hide behind retail floors. The signs were never enough, and asking for directions is a last resort, not a solution.
 
-### Mission
-
-Make indoor spaces as easy to navigate as outdoor ones. We believe that getting lost inside a building is a solved problem; it just has not been deployed at scale yet.
+Outdoor navigation is solved. Indoor navigation is not. That gap is what we are closing.
 
 ### The team
 
-We are a small team of engineers and designers building this from the ground up. We are intentionally lean and plan to grow alongside our first deployments.
+We are a small team building this from the ground up. We are intentionally lean and plan to grow alongside our first deployments.
 
-### Values
+- **Engineering** — maps, routing algorithms, and the systems that make them fast and reliable
+- **Design** — interfaces that disappear so the user can focus on where they are going, not on how to use the tool
+
+### How we think
 
 - **Build for the user first.** The best navigation is the one you do not have to think about.
 - **Ship early, iterate fast.** Real deployments teach us more than prototypes ever will.
 - **Stay independent.** We use open-source tools and avoid vendor lock-in.
-- **Work openly.** We share what we learn and publish case studies from every partnership.
+- **Work openly.** We publish case studies from every partnership.
