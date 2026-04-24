@@ -19,4 +19,4 @@ The more you tell us about your building and the people navigating it, the faste
 - Do you have floor plans or CAD files?
 - What is the biggest wayfinding problem you see today?
 
-We will let you know honestly whether a pilot makes sense right now or if it is better to wait.
+We will tell you honestly whether a pilot makes sense or if it is better to wait.

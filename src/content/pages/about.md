@@ -10,7 +10,7 @@ Outdoor navigation is solved. Indoor navigation is not. That gap is what we are 
 
 ## The team
 
-We are a small team building this from the ground up. We are intentionally lean and plan to grow alongside our first deployments.
+We are a small team. We plan to grow alongside our first deployments.
 
 - **Engineering** — maps, routing algorithms, and the systems that make them fast and reliable
 - **Design** — interfaces that disappear so the user can focus on where they are going, not on how to use the tool
@@ -24,8 +24,8 @@ We are a small team building this from the ground up. We are intentionally lean 
 
 ## Where we are headed
 
-We start with web-based wayfinding because it deploys fast and works everywhere. From there, the map becomes a foundation for something larger.
+We start with web-based wayfinding because it deploys fast and works everywhere. From there, the map grows.
 
-The next step is intelligence — directions that learn how people actually move through a space, that predict congestion before it happens, and that get sharper the more they are used. We are building cross-platform apps that extend the experience without fragmenting it: offline access, deeper OS integrations, and accessibility features that go beyond what a browser can offer.
+Directions will learn how people actually move through a space — predicting congestion, adjusting routes in real time, getting sharper with use. Cross-platform apps will bring offline access, deeper integrations, and accessibility features that go beyond what a browser can offer.
 
-Eventually, the same layer that guides someone to room 247 can power what happens when they arrive. Every building has its own workflows — registrations, inventory, scheduling — and we are building the connective tissue between navigation and the systems that already run the space.
+Eventually, the same layer that guides someone to room 247 can power what happens when they arrive — registrations in a hospital, inventory in a supermarket, scheduling on a campus. Navigation becomes the link between people and the building's own systems.

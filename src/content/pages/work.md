@@ -4,7 +4,7 @@ title: Work
 
 ## What we build
 
-newmap turns complex buildings into spaces that are easy to understand and move through. We build the maps, the directions, and the interfaces that help people get where they need to go — on the devices they already carry.
+newmap turns complex buildings into spaces people can actually navigate. Maps, directions, and interfaces — on the devices people already carry.
 
 ### Platform
 
@@ -15,10 +15,10 @@ newmap turns complex buildings into spaces that are easy to understand and move 
 
 ## How we work
 
-Every building is different. We do not ship generic software and walk away. We work with the people who know the space best — facilities teams, operations staff, front-desk workers — to build something that actually fits.
+Every building is different. We work with the people who know the space — facilities teams, operations staff, front-desk workers — to build something that fits.
 
-You bring the floor plans and the domain knowledge. We bring the maps, routing, and interface. Together we make something that works for the people who use it.
+You bring the floor plans. We bring the maps, routing, and interface. We make it work together.
 
 ## Current status
 
-We are actively developing the platform while running pilot deployments with early partners. If you are interested in partnering, [see our offerings](/offerings).
+We are running pilot deployments with early partners while developing the platform. If you want to partner, [see our offerings](/offerings).
