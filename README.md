@@ -8,8 +8,8 @@ The central hub for newmap.
 
 ```json
 {
-  "url": "https://newmap.site",
-  "email": "hello@newmap.site"
+  "url": "https://newmap.tech",
+  "email": "hello@newmap.tech"
 }
 ```
 
