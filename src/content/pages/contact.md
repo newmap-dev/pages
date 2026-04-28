@@ -6,7 +6,7 @@ title: Contact
 
 The fastest way to reach us:
 
-[hello@newmap.tech](mailto:hello@newmap.tech)
+[contact@newmap.tech](mailto:contact@newmap.tech)
 
 We read everything and respond within 24–48 hours.
 

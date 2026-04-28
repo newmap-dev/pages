@@ -33,4 +33,4 @@ If you work in education, transit, retail, or events and want to be an early par
 
 If you manage a complex indoor space and care about the people navigating it, we want to talk to you. No technical expertise required.
 
-[hello@newmap.tech](mailto:hello@newmap.tech)
+[contact@newmap.tech](mailto:contact@newmap.tech)

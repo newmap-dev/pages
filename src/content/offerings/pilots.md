@@ -50,4 +50,4 @@ If you work in education, transit, retail, or events and want to be an early par
 
 ## Ready to talk?
 
-[hello@newmap.tech](mailto:hello@newmap.tech)
+[contact@newmap.tech](mailto:contact@newmap.tech)

@@ -9,7 +9,7 @@ The central hub for newmap.
 ```json
 {
   "url": "https://newmap.tech",
-  "email": "hello@newmap.tech"
+  "email": "contact@newmap.tech"
 }
 ```
 
