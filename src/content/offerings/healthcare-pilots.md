@@ -42,11 +42,15 @@ That is it. We handle the build, deployment, and iteration. You just point us at
 
 **Week 1: Map.** We build a digital map from your floor plans and configure routing for the pilot area.
 
-**Week 2: Deploy.** We launch a web-based wayfinding interface your visitors can try immediately. We start gathering feedback right away.
+**Week 2: Deploy.** We place QR codes at entrances, elevators, and corridor junctions. Patients and visitors scan them to get turn-by-turn directions on their phone. No app, no GPS, no guesswork.
 
 **Week 3: Iterate.** We refine based on what we learn — usually a few quick adjustments to routes, room labels, or the interface.
 
 **Week 4: Publish.** We write a case study together and discuss whether a full deployment makes sense. If it does, we will outline next steps and pricing. If it does not, we part ways with what we learned.
+
+## What comes next
+
+The pilot uses QR codes because they work everywhere, today. As we grow, the same maps will make navigation increasingly seamless and automatic — whatever that looks like when the time comes.
 
 ## Ready to talk?
 

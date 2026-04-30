@@ -42,11 +42,15 @@ That is it. We handle the build, deployment, and iteration. You just tell us whi
 
 **Week 1: Map.** We build a digital map from your floor plans and configure routing for the pilot area.
 
-**Week 2: Deploy.** We launch a web-based wayfinding interface shoppers can try immediately. We start gathering feedback right away.
+**Week 2: Deploy.** We place QR codes at mall entrances, near anchor stores, and at directory replacement points. Shoppers scan them to get directions to any store, restroom, or entrance on their phone. No app, no kiosk, no wandering.
 
 **Week 3: Iterate.** We refine based on what we learn — usually a few quick adjustments to routes, store labels, or the interface.
 
 **Week 4: Publish.** We write a case study together and discuss whether a full deployment makes sense. If it does, we will outline next steps and pricing. If it does not, we part ways with what we learned.
+
+## What comes next
+
+The pilot uses QR codes because they work everywhere, today. As we grow, the same maps will make navigation increasingly seamless and automatic — whatever that looks like when the time comes.
 
 ## Ready to talk?
 
