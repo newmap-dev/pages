@@ -1,28 +1,34 @@
 ---
 title: Healthcare Pilot Partnerships
-subtitle: Free indoor navigation pilots for hospitals and medical campuses
+subtitle: Patients miss appointments, staff waste time giving directions, and experience scores take the hit. We fix one area of your building in 4 weeks so you can see what changes.
 status: Active
 ---
 
-## Overview
+## The problem
 
-We build a live navigation prototype inside one area of your hospital or medical campus so you can see whether it works before committing to anything. No cost, no procurement, no IT overhead. We map the space, deploy an interface, gather feedback, and publish a case study together.
+A patient arrives for an MRI on the 4th floor and ends up in radiology on the 2nd. A family member wanders the ICU wing looking for room 412. An outpatient shows up 20 minutes late because the entrance they used doesn't match the directions on their appointment letter.
 
-This is not a product trial. There is no obligation to continue. It is a way to find out whether indoor navigation works for your patients, visitors, and staff.
+Hospitals and medical campuses are among the most complex indoor environments most people will ever navigate. The signs are never enough. And every time someone gets lost, it costs time, creates stress, and pulls your staff away from real work.
+
+## What the pilot does
+
+We build a live navigation prototype inside one high-traffic area of your facility — the ER entrance, the imaging wing, the outpatient clinic, wherever wayfinding pain is most acute. Patients and visitors scan a QR code or open a link and get turn-by-turn directions on their phone. No app download, no kiosk, no hardware.
+
+The pilot runs for 4 weeks. You see real data on how people move through the space, where they get stuck, and whether navigation actually reduces the friction. At the end, you decide whether a full deployment makes sense.
 
 ### Scope
 
-The pilot covers one focused area — a single floor, a busy wing, or a department where people get lost most. We pick the scope together based on where navigation would matter most: the ER entrance, the imaging wing, the outpatient clinic, wherever wayfinding pain is highest.
+One focused area. A single floor, a busy wing, or a department. We pick the scope together based on where the problem is worst.
 
 The prototype runs for the duration of the pilot. If you want to keep, expand, or maintain it beyond that, we will talk about what a paid engagement looks like. No surprises.
 
 ## What you get
 
-- **A live prototype** in one area of your facility, accessible via QR code or web link
-- **Real feedback** from patients, visitors, and staff
-- **Data on how people move** — which routes are used, where people get stuck, how long they spend searching
+- **A working navigation interface** in one area of your facility, accessible via QR code or web link
+- **Data on patient and visitor movement** — which routes are used, where people get stuck, how long they spend searching
+- **Feedback from real users** — patients, family members, and staff on whether it actually helps
 - **A published case study** with your organization named
-- **Clarity** on whether a full deployment is worth it
+- **Clarity** on whether a full deployment is worth the investment
 
 ## What we need from you
 

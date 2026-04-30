@@ -1,28 +1,34 @@
 ---
 title: Retail & Mall Pilot Partnerships
-subtitle: Free indoor wayfinding pilots for shopping centers and malls
+subtitle: Shoppers who can't find stores don't come back. We test indoor wayfinding in one area of your mall so you can see what changes — foot flow, tenant visibility, dwell time.
 status: Active
 ---
 
-## Overview
+## The problem
 
-We build a live wayfinding prototype inside one area of your shopping center so you can see whether it works before committing to anything. No cost, no procurement, no IT overhead. We map the space, deploy an interface, gather feedback, and publish a case study together.
+A shopper walks in looking for a specific store, can't find it, and leaves. A family spends ten minutes circling the food court instead of spending that time in the stores nearby. A first-time visitor gives up on the static directory because it's just a wall of names.
 
-This is not a product trial. There is no obligation to continue. It is a way to find out whether indoor wayfinding improves the shopper experience in your mall.
+Malls and shopping centers are designed to move people through space, but most of them have dead zones, confusing layouts, and no real way to understand where foot traffic goes or drops off. Lost shoppers don't just leave frustrated — they leave without buying.
+
+## What the pilot does
+
+We build a live wayfinding prototype inside one area of your mall — a single floor, a cluster of anchor stores, or a zone where foot traffic is highest. Shoppers scan a QR code or open a link and get directions to any store, restroom, or entrance on their phone. No app download, no kiosk, no hardware.
+
+The pilot runs for 4 weeks. You see real data on how people move through the space, which routes they take, and whether wayfinding actually changes behavior. At the end, you decide whether a full deployment makes sense.
 
 ### Scope
 
-The pilot covers one focused area — a single floor, a cluster of anchor stores, or a zone where foot traffic is highest. We pick the scope together based on where wayfinding would have the most immediate impact: replacing a static directory, improving tenant visibility, or reducing dead zones.
+One focused area. A single floor, an anchor store cluster, or a zone with the highest foot traffic. We pick the scope together based on where wayfinding would have the most immediate impact.
 
 The prototype runs for the duration of the pilot. If you want to keep, expand, or maintain it beyond that, we will talk about what a paid engagement looks like. No surprises.
 
 ## What you get
 
-- **A live prototype** in one area of your mall, accessible via QR code or web link
-- **Real feedback** from shoppers and tenants
-- **Data on foot flow** — which routes are used, which areas get skipped, where people wander
+- **A working wayfinding interface** in one area of your mall, accessible via QR code or web link
+- **Data on foot flow** — which routes shoppers take, which areas get skipped, where people wander
+- **Feedback from real users** — shoppers and tenants on whether it actually helps
 - **A published case study** with your organization named
-- **Clarity** on whether a full deployment is worth it
+- **Clarity** on whether a full deployment is worth the investment
 
 ## What we need from you
 
