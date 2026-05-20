@@ -25,9 +25,9 @@ Our primary offering is a no-cost pilot program for organizations that manage co
 
 ### Who we are looking for
 
-We are currently focused on healthcare — hospitals, clinics, and medical campuses — because these are among the most complex indoor environments. If we can make navigation work here, we can make it work anywhere.
+We are currently focused on healthcare: hospitals, clinics, and medical campuses. These are among the most complex indoor environments. If we can make navigation work here, we can make it work anywhere.
 
-If you work in education, transit, retail, or events and want to be an early partner, [contact us](/contact). We designed our platform to be industry-agnostic from day one.
+If you work in education, transit, retail, or events and want to be an early partner, [contact us](/contact). We built the platform to work across industries from the start.
 
 ### Get in touch
 
